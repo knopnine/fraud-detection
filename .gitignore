@@ -14,3 +14,7 @@ catboost_info/
 mlartifacts/
 mlruns/
 threshold_tuning_plot.png
+
+# Generated experiment runs and serialized models
+outputs/
+*.joblib

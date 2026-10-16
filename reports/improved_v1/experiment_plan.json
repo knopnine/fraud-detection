@@ -1,0 +1,71 @@
+{
+  "seed": 20261016,
+  "source_sha256": "8774d2f73aff78e4db3b44dc8ae7e52f00db8be6ea77374fd2e64c64acc6b668",
+  "outer_folds": 5,
+  "outer_repeats": 2,
+  "inner_folds": 3,
+  "alert_budget": 0.1,
+  "candidates": [
+    "dummy_prior",
+    "logistic_C0.1_unweighted",
+    "logistic_C0.1_balanced",
+    "logistic_C1.0_unweighted",
+    "logistic_C1.0_balanced",
+    "forest_unweighted",
+    "forest_balanced",
+    "notebook_forest",
+    "notebook_forest_balanced",
+    "notebook_adaboost",
+    "engineered_logistic",
+    "engineered_logistic_balanced",
+    "spline_logistic_balanced",
+    "engineered_random_oversampling",
+    "categorical_smote_logistic",
+    "engineered_boost_unweighted",
+    "engineered_boost_balanced",
+    "engineered_small_forest"
+  ],
+  "families": {
+    "notebook_representative": [
+      "dummy_prior",
+      "logistic_C1.0_unweighted",
+      "logistic_C1.0_balanced",
+      "notebook_forest",
+      "notebook_forest_balanced",
+      "notebook_adaboost"
+    ],
+    "previous_pipeline": [
+      "dummy_prior",
+      "logistic_C0.1_unweighted",
+      "logistic_C0.1_balanced",
+      "logistic_C1.0_unweighted",
+      "logistic_C1.0_balanced",
+      "forest_unweighted",
+      "forest_balanced"
+    ],
+    "expanded_approach": [
+      "dummy_prior",
+      "logistic_C0.1_unweighted",
+      "logistic_C0.1_balanced",
+      "logistic_C1.0_unweighted",
+      "logistic_C1.0_balanced",
+      "forest_unweighted",
+      "forest_balanced",
+      "notebook_forest",
+      "notebook_forest_balanced",
+      "notebook_adaboost",
+      "engineered_logistic",
+      "engineered_logistic_balanced",
+      "spline_logistic_balanced",
+      "engineered_random_oversampling",
+      "categorical_smote_logistic",
+      "engineered_boost_unweighted",
+      "engineered_boost_balanced",
+      "engineered_small_forest"
+    ]
+  },
+  "selection_metric": "mean inner fold average precision",
+  "permutation_model": "engineered_logistic_balanced",
+  "permutations": 99,
+  "interpretation": "Exploratory nested comparison on already inspected data; no untouched external test."
+}
